@@ -10,7 +10,7 @@
 <body class="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-100 transition-colors duration-300">
   <div class="max-w-lg px-1">
     <!-- Toggle Icon -->
-    <div class="flex justify-center p-2">
+    <div class="flex justify-center p-1">
       <button id="theme-toggle" class="text-2xl transition hover:scale-110">
         <span id="light-icon" class="hidden">🌞</span>
         <span id="dark-icon">🌙</span>
@@ -19,10 +19,10 @@
 
     <!-- Display -->
     <input id="display" readonly
-     class="w-full h-22 mb-4 text-right px-5 text-3xl rounded-lg shadow-inner bg-gray-100 dark:bg-gray-900 border-gray-100 dark:border-gray-600 text-black dark:text-white" /> 
+     class="w-full h-22 mb-4 text-right px-5 text-3xl rounded-lg shadow-inner bg-gray-300 dark:bg-gray-900 border-gray-100 dark:border-gray-600 text-black dark:text-white" /> 
 
     <!-- Buttons Grid -->
-      <div class="grid grid-cols-4 gap-6 mb-10">
+      <div class="grid grid-cols-4 gap-4 mb-10">
       <!-- All buttons with Tailwind classes directly applied -->
       <button class="px-3 py-3 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600 dark: text-black dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="clearDisplay()">AC</button>
       <button class="px-3 py-3 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('/')">/</button>
