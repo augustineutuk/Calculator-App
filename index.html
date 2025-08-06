@@ -25,7 +25,7 @@
       <div class="grid grid-cols-4 gap-4 mb-10">
       <!-- All buttons with Tailwind classes directly applied -->
       <button class="px-3 py-3 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600 dark: text-black dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="clearDisplay()">AC</button>
-      <button class="px-3 py-3 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('/')">/</button>
+      <button class="px-3 py-3 rounded-full text-lg font-semibold bg-red-400 text-white hover:bg-red-600 transition shadow-md"onclick="backspace()">⌫</button>
       <button class="px-3 py-3 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('*')">×</button>
       <button class="px-3 py-3 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('-')">−</button>
 
@@ -37,7 +37,7 @@
       <button class="px-3 py-3 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('4')">4</button>
       <button class="px-3 py-3 rounded-full  text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('5')">5</button>
       <button class="px-3 py-3 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('6')">6</button>
-      <button class="px-3 py-3 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('**')">^</button>
+      <button class="px-3 py-3 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('/')">/</button> 
 
       <button class="px-3 py-3 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('1')">1</button>
       <button class="px-3 py-3 rounded-full  text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('2')">2</button>
@@ -82,6 +82,12 @@ function clearDisplay() {
   displayValue = '';
   evalValue = '';
   display.value = '';
+}
+
+function backspace() {
+  displayValue = displayValue.slice(0, -1);
+  evalValue = evalValue.slice(0, -1);
+  document.getElementById('display').value = displayValue;
 }
 
 function calculate() {
