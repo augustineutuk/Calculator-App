@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body class="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
-  <div class="max-w-lg px-3">
+<body class="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-100 transition-colors duration-300">
+  <div class="max-w-lg px-1">
     <!-- Toggle Icon -->
     <div class="flex justify-center p-2">
       <button id="theme-toggle" class="text-2xl transition hover:scale-110">
@@ -19,15 +19,15 @@
 
     <!-- Display -->
     <input id="display" readonly
-     class="w-full h-16 mb-4 text-right px-5 text-3xl rounded-lg shadow-inner bg-white dark:bg-gray-800 border-gray-100 dark:border-gray-600 text-black dark:text-white" /> 
+     class="w-full h-24 mb-4 text-right px-5 text-3xl rounded-lg shadow-inner bg-gray-100 dark:bg-gray-900 border-gray-100 dark:border-gray-600 text-black dark:text-white" /> 
 
     <!-- Buttons Grid -->
-      <div class="grid grid-cols-4 gap-2 mb-10">
+      <div class="grid grid-cols-4 gap-8 mb-10">
       <!-- All buttons with Tailwind classes directly applied -->
-      <button class="px-3 py-2 rounded-full text-full font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600 dark: text-black dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="clearDisplay()">AC</button>
-      <button class="px-3 py-2 rounded-full text-md font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('/')">/</button>
-      <button class="px-3 py-2 rounded-full text-md font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('*')">×</button>
-      <button class="px-3 py-2 rounded-full text-md font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('-')">−</button>
+      <button class="px-3 py-2 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600 dark: text-black dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="clearDisplay()">AC</button>
+      <button class="px-3 py-2 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('/')">/</button>
+      <button class="px-3 py-2 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('*')">×</button>
+      <button class="px-3 py-2 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('-')">−</button>
 
       <button class="px-3 py-2 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('7')">7</button>
       <button class="px-3 py-2 rounded-full text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('8')">8</button>
@@ -64,9 +64,6 @@
       <button class="px-3 py-2 rounded-full  text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600  dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="inverseTan()">tan⁻¹</button>
       <button class="px-3 py-2 rounded-full  text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600 dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append('(')">(</button>
       <button class="px-3 py-2 rounded-full  text-lg font-semibold bg-white bg-opacity-20 backdrop-blur-md shadow-md hover:bg-opacity-40 transition dark:bg-gray-600 dark:bg-opacity-10 dark:hover:bg-opacity-30" onclick="append(')')">)</button> 
-
-     
-
     </div>
   </div>
 
